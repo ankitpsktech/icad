@@ -1,0 +1,783 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/785124d656.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <style>
+        body{
+            margin: 0;
+        }
+        .mobhead{   display: none;
+        }
+    .ul1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+        background-color:  rgb(3, 9, 63);
+        border: 2px solid black;
+        width: 100%;
+        position: fixed;
+        display: flex;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: azure;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown :hover .dropbtn {
+        background-color: black;
+    }
+
+    li .dropdown {
+        display: inline-block;
+    }
+
+    li .dropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: rgb(3, 9, 63);
+            z-index: 1;
+            width: 120px;
+        }
+        .dropdown-content a{
+            font-size: 12;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+        background-color:yellow;
+        
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+    .button {
+        text-align: center;
+        color: gold;
+        background-color: rgb(16, 16, 83);
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 2px;
+        float: left;
+        border-radius: 08px;
+        margin-left: 450px;
+
+    }
+    .button1 {
+        text-align: center;
+        color: gold;
+        background-color: rgb(16, 16, 83);
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 2px;
+        float: left;
+        border-radius: 08px;
+        margin-left: 100px;
+
+    }
+
+    .guru {
+        text-align: center;
+        color: black;
+        width: 250px;
+        height: 350px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 80px;
+        margin-left: 50px;
+        float: left;
+        background-color: rgb(217, 216, 216);
+
+    }
+    .guru:hover {
+            background-color: white;
+            border-radius: 0px;
+            
+        }
+
+    .ankit {
+        text-align: center;
+        color: black;
+        width: 350px;
+        height: 450px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+        float: left;
+        background-color: white;
+
+    }
+     .ankit:hover{
+        background-color: whitesmoke;
+
+     }
+    .guru1 {
+        text-align: center;
+        color:white;
+        width: 700px;
+        height: 300px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 50px;
+        float: left;
+
+    }
+
+    .guru2 {
+        color: black;
+        width: 250px;
+        height: 300px;
+        font-size: 20px;
+        padding: 10px;
+        box-shadow: 2px 16px 16px 2px;
+        margin-top: 50px;
+        margin-left: 150px;
+        float: left;
+        background-color: white;
+        text-align: left;
+
+    }
+
+    .guru3 {
+        text-align: center;
+        color: black;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        padding: 10px;
+        box-shadow: 2px 6px 6px 2px;
+        margin-left: 80px;
+        float: left;
+        background-color: white;
+        color: gold;
+
+    }
+
+    .ankit1 {
+        text-align: center;
+        color: black;
+        width: 350px;
+        height: 350px;
+        font-size: 20px;
+        padding: 10px;
+        box-shadow: 2px 16px 16px 2px;
+        margin-top: 70px;
+        margin-left: 50px;
+        float: left;
+        background-color:whitesmoke;
+
+    }
+    .ankit2 {
+        width: 100%;
+        height: 150px;
+        background-color:#e8e5e8;
+        
+    }
+
+      .veer {
+        text-align: center;
+        color: white;
+        width: 350px;
+        height: 350px;
+        font-size: 20px;
+        padding: 10px;
+        box-shadow: 2px 6px 6px 2px;
+        margin-top: 30px;
+        margin-left: 200px;
+        float: left;
+        background-color: beige;
+
+    }
+    .veer:hover{
+        box-shadow: 6px 8px 8px 6px;
+    }
+
+    .ankit11 { border: 2px solid white;
+        color: white;
+        width: 600px;
+        height: 250px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 100px;
+        margin-left: 100px;
+        float: left;
+    
+    }
+    .guru21 {
+        color: black;
+        width: 150px;
+        height: 400px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 150px;
+        float: left;
+        text-align: left;
+
+    }
+    footer {
+            margin-top: 15px;
+            height: 500px;
+        }
+
+        .foot-panel1 {
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .foot-panel2 {
+            background-color: rgb(3, 9, 63);
+            color: black;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 10px;
+            margin-top: 500px;
+        }
+
+        ul {
+            margin-top: 10px;
+            float: left;
+        }
+
+        ul a {
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+
+        .foot-panel3 {
+            color: black;
+             /* border-top: 0.5px solid white;  */
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            font-family: algerian;
+
+        }
+        .tanu1{
+            margin-top: 630px;
+            height: 430px;
+        }
+        .gunu{
+            margin-top: 500px;
+            height: 600px;
+        }
+        /* .image{
+            margin-left: 30px;
+            margin-top: 40px;
+
+        }
+        .tanu{
+            margin-top: 30px; margin-left: 5px; margin-right: 30px; color: white;
+        }
+        .mannu{
+            padding: 0%;
+        } */
+        @media screen and (max-width: 800px) {
+            .header {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #DE1C13;
+        position: fixed;
+        width: 50%;
+        display: none;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        text-align: center;
+        padding: 4px 12px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown :hover .dropbtn {
+        background-color: black;
+    }
+
+    li .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .Deskhead{
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+body{
+  margin: 0;
+}
+
+.mobhead{
+  width: 89%;
+  padding: 5% 5% 10% 5%;
+  margin: 0;
+  height: auto;
+  display: block;
+
+
+
+  /*  position: relative;  */
+  /* / position: fixed; / */
+  border: 1px solid yellowgreen;
+   color: black;
+  /* / display: none; / */
+
+}
+.mobhead ul li{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* / border: 1px solid yellowgreen; / */
+width: 100%;
+
+}
+.mobhead ul li a{
+  margin: 0;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  /* / border: 1px solid yellowgreen; / */
+width: 100%;
+}
+.mobhead ul{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* height: 210px; */
+}
+li{
+  /* / width: 100%; / */
+  margin: 0;
+  height: auto;
+  padding: 0;
+}
+.mobhead i{
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+
+}
+ .mobhead .logo1{
+  /* / float: left; / */
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  /* / width: ; / */
+}
+.mobhead .logo1 img{
+  float: left;
+  width: auto;
+  height: 50px;
+}
+.ankit2{
+    width: 100%;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.button{
+    width: 150px;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 50px;
+}
+.button1{
+    width: 150px;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10px;
+}
+.guru{
+    width: 90%;
+    margin: 10px 10px 10px 10px;
+}
+
+.ankit{
+    margin: 5px 5px 5px 25px;
+    padding: 0%;
+    width: 90%;
+}
+.guru1{
+    width: 90%;
+    margin: 0%;
+}
+.guru3{
+    width: 15%;
+    margin: 0px 5px 5px 10px;
+} 
+.guru2{
+    width: 70%;
+    margin: 0px;
+    text-align: center;
+    margin: 50px;
+}
+.veer{
+    width: 90%;
+     margin: 10px;    
+     margin-top: 20px;
+} 
+.ankit1{
+    width: 90%;
+    margin: 5px 5px 5px 5px;
+    margin-top: 50px;
+}
+.tanu1{
+    height: 800px;
+    margin-top: 1500px;
+}
+.gunu{
+    height: 900px;
+}
+
+.foot-panel2{
+                display: block;
+                padding: 0px;
+                margin: 0px;
+                width: 360px;
+                height: 1000px;
+                margin-top: 1150px;
+                width: 100%;
+                
+                
+
+            }
+            .foot-panel3{
+                display: block;
+                padding: 0px;
+                margin: 0px;
+                width: 363px;
+                height: 30px;
+                font-size: 10px;
+                width: 100%;
+                
+             
+            }
+            .mannu{
+               width: 100%;
+               
+            }
+            .k2{
+                width: 90%;
+                margin-top: 00px;
+            }
+            .mini{
+                display: none;
+                background-color: white;
+                width: 100%;
+                list-style: none;
+
+            }
+            .min li{
+                width: 100%;
+
+            }
+            .mini li a{
+                color: black;
+            }
+            .serv2{
+                display: none;
+
+            }
+        }
+</style>
+
+    <body>
+        <div class="header">
+            <ul class="ul1">
+                <li><a href="#logo"><img src="images/icad logo1.jpg"
+                            width="190px"
+                            height="50px" style="margin-left: 150px;">
+                    </a> </li>
+                <li style="margin-left: 600px;"><a href="index.html">HOME</a> </li>
+                <li><a href="about us.html">ABOUT</a> </li>
+                <li class="dropdown"><a class="drpbtn" href="">SERVICES</a>
+
+                    <div class="dropdown-content">
+                        <a href="gre.html">GRE</a>
+                        <a href="gmat.html">GMAT</a>
+                        <a href="sat.html">SAT</a>
+                        <a href="toefl.html">TOEFL</a>
+
+                    </div></li>
+
+                <li><a href="contact.html">CONTACT</a> </li>
+            </ul>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".open").click(function(){
+                    $(".mini").slideToggle();
+                })
+            })
+            $(document).ready(function(){
+                $(".serv1").click(function(){
+                    $(".serv2").slideToggle();
+                })
+            })
+            </script>
+        <div class="mobhead">
+            <div class="logo1"><img src="images/icad logo1.jpg"><i class="fa-solid fa-bars open"></i></div> 
+            <ul class="mini" style="background-color: white;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html" >About</a></li>
+                <li class="serv1">Services</a></li>
+                  <li  class="serv2"> <a href="gre.html">GRE</a></li>
+                   <li class="serv2"> <a href="gmat.html">GMAT</a></li>
+                   <li class="serv2"> <a href="sat.html">SAT</a></li>
+                   <li class="serv2"> <a href="toefl.html">TOEFL</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+        </div>
+        <div class="ankit2"></div>
+        <div align="center"
+            style="background-image: url(images/mba-coaching-classes-in-jai.jpg); height: 600px;">
+            <br>
+           <div> <h3>ICADIANS GOT ADMITS FROM THE BEST UNIVERSITIES OF THE WORLD</h3>
+            <marquee style="margin-left: 100px; margin-left: 40px; width:90%;"><h1>GRE | GMAT | SAT | TOEFL</h1></marquee>
+            <div><button class="button">LEARN COURSE</button>
+            <button class="button1">SEE MORE</button></div>
+        </div>
+        <div style="margin-top: 500px;">
+            <center>
+                <h1>ICAD Services</h1>
+            </center>
+            <center>
+                <h2>We help you to go ABROAD FOR STUDIES</h2>
+            </center>
+        </div>
+        <div class="guru">
+            <center><img src="images/cap education.png" height="50"
+                    width="50"></center>
+            <h2>Graduate Record Examination</h2>
+            <p style="text-align: justify;">GRE is required for all MS & Ph.D programs, except Business, Law
+                and Medicine, for most of the American
+                graduate schools. <br></p>
+            <button
+                style="background-color: rgb(3, 9, 63);border-radius: 3px;color: gold;width:150px;height: 40px;">LEARN
+                MORE</button>
+        </div>
+        <div class="guru" id="data1">
+            <center><img src="images/GMAT.png" height="50"
+                    width="50"></center>
+            <h2>Graduate Management Aptitude Test
+            </h2>
+            <p  style="text-align: justify;">GMAT is required for admission to Master's program in Business
+                Administration.<br></p>
+            <button
+                style="background-color: rgb(3, 9, 63);border-radius: 3px;color: gold;width:150px;height: 40px;">LEARN
+                MORE</button>
+        </div>
+        <div class="guru" id="data1">
+            <center><img src="images/sat.png" height="50"
+                    width="50"></center>
+            <h2>Scholastic Aptitude Test</h2>
+            <p  style="text-align: justify;">SAT is required for admission to all Bachelors program.<br></p>
+            <br>
+            <br>
+            <button
+                style="background-color: rgb(3, 9, 63);border-radius: 3px;color: gold;width:150px;height: 40px;">LEARN
+                MORE</button>
+        </div>
+        <div class="guru" id="data1">
+            <center><img src="images/GMAT.png" height="50"
+                    width="50"></center>
+            <h2>Test of English as Foreign Language</h2>
+            <p  style="text-align: justify;">The TOEFL Internet based test Emphasizes on integrated skills and
+                measures all four Language skills. <br></p>
+            <button
+                style="background-color: rgb(3, 9, 63);border-radius: 3px;color: gold;width:150px;height: 40px;">LEARN
+                MORE</button>
+        </div>
+        <div align="center"
+            style="font-size: 25px;margin-top: 550px;background-image:url();">
+            <h1>Admission Services</h1>
+        </div>
+        <div class="ankit" id="data1">
+            <center><img src="images/universities.png" height="250"
+                    width="250"></center>
+            <h2>selection of universities</h2>
+            <p  style="text-align: justify;">The most important task is accomplished at ICAD taking into
+                account student's credentials GRE/GMAT/SAT/TOEFL
+                score,academics, research and other extra academic
+                activities.<br></p>
+        </div>
+        <div class="ankit" id="data1">
+            <center><img src="images/online aplication.png" height="250"
+                    width="250"></center>
+            <h2>Online Application</h2>
+            <p  style="text-align: justify;">Icad provides guidance on submiting on online aplication to
+                universities comprehensive checklists for all the
+                universitiesbased on their different requirement.<br></p>
+        </div>
+        <div class="ankit" id="data1">
+            <center><img src="images/document.png" height="250"
+                    width="250"></center>
+            <h2>Preparation of documents</h2>
+            <p  style="text-align: justify;">ICAD significancy aids student for Preparationof various
+                documents including statement of purpose (sop), letters of
+                recommendation(LOR),resume,finacial statement<br></p>
+        </div>
+        <div class="tanu1" align="center"
+            style="background-color:rgb(3, 9, 63); width: 100%;">
+            <div class="guru1">
+                <h1>Register Now</h1>
+                <h5>There is a moment in the life of any aspiring astronomer
+                    that it is time to buy that first telescope.
+                    It's exciting to think about setting up your own viewing
+                    station.</h5>
+                <div class="guru3">I</div>
+                <div class="guru3">C</div>
+                <div class="guru3">A</div>
+                <div class="guru3">D</div>
+            </div>
+            <div class="guru2">
+                <center><h2>For Enquiry</h2></center>
+                <form>
+                    <input placeholder="Your Name" type="text" />
+                </form>
+                <form>
+                    <input placeholder="Your phone no." type="text" />
+                </form>
+                <form>
+                    <input placeholder="Email Address" type="text" />
+                </form>
+                <form>
+                    <input placeholder="Your massage" type="text" />
+                </form>
+                <button
+                    style="background-color: rgb(3, 9, 63);border-radius: 3px;color: gold;width:150px;height: 40px; margin-left: 50px;">SUBMIT</button>
+
+            </div>
+        </div>
+        <div  class="gunu" align="center"
+            style="background-color:rgb(16, 16, 83);width: 100%; margin-top: 100px;">
+            <center><h1 style="color: white;margin-top: 100px;">ICADians in
+                    CANADA</h1></center>
+            <div class="veer"
+                style="background-image: url(images/pooja\ tiple.png);"> </div>
+            <div class="veer"
+                style="background-image: url(images/pushpak\ jadhao.png);"></div><br>
+            <br>
+            <br>
+            <center><h2 style="margin-top: 410px; color: white;">MORE THAN 4000 SUCCESS
+                    STORIES...
+                </h2></center>
+        </div>
+        <div class="k2"><center><h1>Testimonial</h1>
+            <h2>Student say About ICAD </h2></center></div>
+        <div class="ankit1" id="data1">
+            <center><img src="images/pramod nayak.png
+                
+                " height="100"
+                    width="100"></center>
+            <h2>Pramod Nayak</h2>
+            <p>MS in Electrical Engg. at Columbia universitiesLives in New York
+                USA<br></p>
+        </div>
+        <div class="ankit1" id="data1">
+            <div>
+                <img src="images/SINGH SETTI.png" height="100"
+                    width="100"></div>
+            <h2>Manmeet Singh Sethi</h2>
+            <p>MS in Electrical Engg. at TAMU Collage satation universitiesbased
+
+                <br></p>
+        </div>
+        <div class="ankit1" id="data1">
+            <center><img src="images/madhumita rai.png" height="100"
+                    width="100"></center>
+            <h2>Maitreyi Upadhayay
+            </h2>
+            <p>MS in Biotechnology at SUNY, Albany USA<br></p>
+        </div>
+        <div class="foot-panel2" style="font-size: medium;">
+            <div style="margin-left: 30px; margin-top: 40px;"><img src="images/icad logo2.jpeg"> </div>
+            <div style="margin-top: 30px; margin-left: 5px; margin-right: 30px; color: white;">
+                <h2>About Icad </h2>
+                <div style="line-height: 25px; color:gray;"><b>ICAD is a pioneer institute in the field of training <br>for
+                        GRE,TOEFL,GMAT & SAT since 1999. It has <br>successfully placed 4000 students from India in<br>
+                        USA.</b></div>
+                </h2>
+            </div>
+    
+            <div>
+                <h3 style="color: white; margin-top: 40px;">QUICK LINKS</h1>
+                    <div style=" color:gray; font-size: 20px; line-height: 40px; margin-left: 5px;background-color: #dddddd;">
+                        <ul>
+                            <li>Home</li><br>
+                            <li>About us</li><br>
+                            <li>GRE</li><br>
+                            <li>GMAT</li><br>
+                            <li>SAT</li><br>
+                            <li>TOEFL</li>
+                        </ul>
+                    </div>
+            </div>
+            <ul>
+                <p>
+                <h3 style="color:white;margin-top: 30px;">ADDRESS</h3>
+                <div style="color:gray; font-size: 20px; line-height: 25px; margin-left: 5px;">Dharampeth Tower, W.H.C. Road
+                    , Dharampeth<br> Nagpur-440010</div>
+                <h3 style="color:white;margin-top: 30px;">CONTACT</h3>
+                <div style="color:gray; font-size: 20px; line-height: 25px; margin-left: 5px;">9763022333 | 9665100333</div></ul>
+                
+        </div>
+        <div style="color: white; width: 100%;background-color: rgb(3, 9, 63);height: 100px; text-align: center;">Copyright ©2024 Icad Insititute| Develope by  PSK Technologies Pvt.Ltd.
+        </div></div>
+    </body>
+    </html>
